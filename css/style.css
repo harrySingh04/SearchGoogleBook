@@ -1,0 +1,33 @@
+body{
+
+    
+}
+#buttonId{
+    background: orange;
+    width:50px;
+}
+
+#list{
+margin-top:40px;
+}
+
+#image{
+
+    width:10%;
+    float:left;
+    margin-right: 4em;
+}
+
+#publish{
+    width:50%;
+    float:left;
+}
+#read{
+    width: 50%;
+    float:right;
+    background: orange;
+}
+
+input:invalid {
+    border: 2px dashed red;
+  }
