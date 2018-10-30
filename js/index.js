@@ -1,9 +1,4 @@
 //jshint esversion:6
-let $=jQuery=null;
-function getGlobalParameter(){
-    $ = jQuery = window.frames[0].jQuery;
-    return window;
-}
 $(document).ready(function () {
     $("#searchQuery").focus(); // Search field has been made focussed so that user can search immediately.
     $('#navigation').hide(); // Hiding the navigation before search and would be made enabled when results have been retrieved.
@@ -76,7 +71,7 @@ function parseData(data, searchQuery) {
         $('#list').append(`<div><p>No Books found with name = ${searchQuery}</p></div>`);
         return;
     }
-    let authors = "", content, counter = 1, thumbnail = "", title = "", publisher = "", infoLink = "";
+    let authors = "", content, counter = 1, thumbnail = "", title = "", publisher = "No Publisher Found", infoLink = "";
 
     //Display the navigation bar
     showNavigation(data.items.length);
