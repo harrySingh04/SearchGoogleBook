@@ -21,7 +21,7 @@ $(document).ready(function () {
         //If user doesn't enter anything , then we can alert the user.
         if (searchQuery == '') {
 
-            alert("Please enter the input for searching books");
+            alert("Please enter the input to search books");
         }
         else {
             // Get the data from the Google Books API and display the result 
