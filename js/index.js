@@ -1,4 +1,5 @@
 //jshint esversion:6
+/* global $ */
 $(document).ready(function () {
     $("#searchQuery").focus(); // Search field has been made focussed so that user can search immediately.
     $('#navigation').hide(); // Hiding the navigation before search and would be made enabled when results have been retrieved.
@@ -130,7 +131,7 @@ function showNavigation(totalItems) {
 
     // Show the navigation
     $('#navigation').show();
-    let limitPerPage = 10;
+    let limitPerPage = 10,totalPages;
     //Total 40 results and 10 result in each page.
     if (totalItems <= 30)
         totalPages = Math.ceil(totalItems / 10);
